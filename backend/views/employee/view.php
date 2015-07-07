@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'emp_id',
-            'sex',
+//            'sex',
             'SexName',
             'title',
             'name',
@@ -58,8 +58,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'office',
             'social',
             'resume',
-            'token_forupload',
-            'count_download_resume',
+//            'token_forupload',
+//            'count_download_resume',
         ],
     ]) ?>
 

@@ -13,14 +13,14 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
-//        'view' => [
-//         'theme' => [
-//             'pathMap' => [
-//                '@app/views' => '@app/themes/adminlte'
-//                 //'@backend/views' => '@backend/themes/adminlte'
-//             ],
-//         ],
-//    ],
+        'view' => [
+         'theme' => [
+             'pathMap' => [
+                '@app/views' => '@app/themes/adminlte'
+                 //'@backend/views' => '@backend/themes/adminlte'
+             ],
+         ],
+    ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
