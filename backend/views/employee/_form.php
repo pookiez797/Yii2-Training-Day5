@@ -33,11 +33,23 @@ use kartik\widgets\Select2;
 
 
 
+    <?php 
+//    $form->field($model, 'countries')->dropDownList(
+//            ArrayHelper::map(Countries::find()->all(), 'country_code', 'country_name')
+//    )
+    ?>
+    
     <?=
-    $form->field($model, 'countries')->dropDownList(
-            ArrayHelper::map(Countries::find()->all(), 'country_code', 'country_name')
+    $form->field($model, 'countries')->widget(Select2::classname(), [
+        'data' => ArrayHelper::map(Office::find()->all(),'country_code','country_name'),
+        'options' => ['placeholder' => 'Select Country'],
+        'pluginOptions' => [
+            'allowClear' => true
+        ],
+            ]
     )
     ?>
+    
 
     <?=
     $form->field($model, 'office')->widget(Select2::classname(), [
